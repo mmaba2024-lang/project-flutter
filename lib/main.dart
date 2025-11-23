@@ -49,17 +49,17 @@ class _HomePageState extends State<HomePage> {
             SizedBox(height: 16),
             ElevatedButton(
               onPressed: () {
-                // طباعة النص من الحقل الأول في الحقل الثاني
+
                 setState(() {
                   _controller2.text = _controller1.text;
                 });
               },
-              child: Text('طباعة النص في الحقل الثاني'),
+              child: Text('طباعت النص '),
             ),
             SizedBox(height: 16),
             ElevatedButton(
               onPressed: () {
-                // الانتقال للصفحة الثانية مع تمرير نص الحقل الأول
+
                 Navigator.push(
                   context,
                   MaterialPageRoute(
@@ -78,7 +78,6 @@ class _HomePageState extends State<HomePage> {
   }
 }
 
-// الصفحة الثانية
 class SecondPage extends StatelessWidget {
   final String passedText;
 
